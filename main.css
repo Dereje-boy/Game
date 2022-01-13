@@ -1,0 +1,135 @@
+*{
+    background-color: darkcyan;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-container{
+    margin-top: 30px;
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.x-input , .y-input , .z-sum , .inner-text{
+    margin:5px;
+    padding:5px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 150px;
+    font-size: 50px;
+}
+
+.z-sum{
+    background-color: rgb(55, 126, 55);
+    color:white;
+}
+
+.main-container h1{
+    background-color: white;
+    font-size: 60px;
+    padding: 10px;
+}
+.error-show{
+    background-color: white;
+    width: 800px;
+    justify-items: center;
+}
+
+.errors{
+    margin-left: 200px;
+    background-color: green;
+    width: 400px;
+    height: 50px;
+    align-self: center;
+}
+
+.result-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 800px;
+}
+.question , .got , .lost , .accuracy{
+    color: black;
+    padding: 30px;
+    background-color: white;
+}
+
+.time-container{
+    display: grid;
+    grid-template-columns: repeat(1fr,8);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". thisTime .  box1 box1  box1 box1 level";
+    background-color: white;
+    width: 800px;
+    height: 100px;
+    align-items: center;
+    justify-items: flex-start;
+    border-top-style: double;
+    border-width: 5px;
+    border-color: blue;
+}
+#this-time , #all-time{
+    grid-area: thisTime;
+    background-color: white;
+    color: rgb(0, 0, 117);
+}
+.box1 {
+    height: 50px;
+    background-color: rgb(64, 231, 64);
+    transition-property: width;
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.box1-container{
+    grid-area: box1;
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.level{
+    grid-area: level;
+    font-size: 30px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    background-color: white;
+}
+.pause_button{
+    background-color: blue;
+    color: white;
+    font-size: 40px;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    justify-self: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pause_button:active{
+    background-color: white;
+    color: black;
+    border:none;
+}
+li{
+    color:white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiT Game</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="x-operand">
+            <input type="number" placeHolder="  x" class="x-input" id="x-iid">
+        </div>
+
+        <h1>+</h1>
+
+        <div class="y-operand">
+            <input type="number" placeHolder=" y" class="y-input" id="y-iid">
+            
+        </div>
+        <h1>=</h1>
+
+        <div class="z-operand">
+            <input type="number" placeHolder="  x+y" class="z-sum" id="z-id">
+        </div>
+    </div>
+
+    <div class="error-show">
+        <div class="errors" id="error"></div>
+    </div>
+
+        <div class="result-container">
+            <h1 class="question">Questions : 1</h1>
+            <h1 class="got">Got : 0</h1>
+            <h1 class="lost">Lost : 0</h1>
+            <h1 class="accuracy">Acc : 0</h1>
+        </div>
+
+        <div class="time-container">
+            <h1 id="all-time">00 : 00</h1>
+            <h1 id="this-time" style="display: none;">00 : 00</h1>
+            
+            <div class="box1-container">
+                <div class="box1" id="box1"></div>
+            </div>
+            <div class="level" id="level">Level : 1</div>
+
+        </div>
+        <div class="button-container">
+                <input type="button" id="pause_button" class="pause_button" value="pause">
+            </div>
+
+        </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
